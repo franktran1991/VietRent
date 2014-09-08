@@ -1,0 +1,667 @@
+2014/09/03 18:37:53 [error] [php] Trying to get property of non-object (/Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php:11)
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require()
+#7 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CWebApplication->run()
+REQUEST_URI=/VietRent/
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php (11)
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php (6)
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php (32)
+2014/09/03 18:40:31 [error] [php] Trying to get property of non-object (/Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php:36)
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require()
+#7 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CWebApplication->run()
+REQUEST_URI=/VietRent/
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php (36)
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php (6)
+in /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php (32)
+2014/09/04 17:44:29 [error] [exception.CException] exception 'CException' with message 'Property "BsNavbar.icon" is not defined.' in /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('icon', 'glyphicon-bookm...')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php(172): CBaseController->widget('bootstrap.widge...', Array)
+#4 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require('/Users/Frank/Pr...')
+#5 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Frank/Pr...', Array, true)
+#6 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/Frank/Pr...', Array, true)
+#7 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require('/Users/Frank/Pr...')
+#13 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Frank/Pr...', Array, true)
+#14 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(784): CBaseController->renderFile('/Users/Frank/Pr...', Array, true)
+#15 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('')
+#21 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/VietRent/index.php?email=anhcuong_vn%40yahoo.com
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:44:33 [error] [exception.CException] exception 'CException' with message 'Property "BsNavbar.icon" is not defined.' in /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('icon', 'glyphicon-bookm...')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/main.php(172): CBaseController->widget('bootstrap.widge...', Array)
+#4 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require('/Users/Frank/Pr...')
+#5 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Frank/Pr...', Array, true)
+#6 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/Frank/Pr...', Array, true)
+#7 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(126): require('/Users/Frank/Pr...')
+#13 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Frank/Pr...', Array, true)
+#14 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(784): CBaseController->renderFile('/Users/Frank/Pr...', Array, true)
+#15 /Users/Frank/Projects/PHP/VietRent/VietRent/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('')
+#21 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/VietRent/index.php
+---
+2014/09/04 17:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:49:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/04 17:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajaxTest".' in /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(270): CController->missingAction('ajaxTest')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('ajaxTest')
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxTest')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/VietRent/index.php?r=site/ajaxTest
+HTTP_REFERER=http://localhost:10088/VietRent/index.php
+---
+2014/09/08 17:52:20 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.tblPrefix" is not defined.' in /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/Frank/Projects/PHP/VietRent/yii/framework/YiiBase.php(220): CComponent->__set('tblPrefix', 'vr_')
+#1 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#3 /Users/Frank/Projects/PHP/VietRent/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#4 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#5 /Users/Frank/Projects/PHP/VietRent/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#6 /Users/Frank/Projects/PHP/VietRent/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Users/Frank/Projects/PHP/VietRent/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#13 /Users/Frank/Projects/PHP/VietRent/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /Users/Frank/Projects/PHP/VietRent/VietRent/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/VietRent/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:10088/VietRent/index.php?r=gii/default/index
+---
