@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)http://localhost:10088/VietRent/index.php# -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="language" content="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- blueprint CSS framework -->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="/VietRent/assets/js/html5shiv.js"></script>
+    <script src="/VietRent/assets/js/respond.min.js"></script>
+<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="./VIET RENT_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./VIET RENT_files/viet-rent.css">
+<link rel="stylesheet" type="text/css" href="./VIET RENT_files/bootstrap-theme.css">
+<script type="text/javascript" src="./VIET RENT_files/jquery.js"></script>
+<script type="text/javascript" src="./VIET RENT_files/jquery.yiiactiveform.js"></script>
+<script type="text/javascript" src="./VIET RENT_files/jquery-ui.min.js"></script>
+<title>VIET RENT</title>
+</head>
+
+<body class="modal-open" style="padding-right: 12px;">
+
+  <nav class="navbar navbar-default" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#yw1" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="http://localhost:10088/VietRent/index.php">VIET RENT</a></div><div class="collapse navbar-collapse" id="yw1"><ul id="yw0" class="navbar-right nav navbar-nav" role="menu"><li data-toggle="modal" data-target="#SignUpModal" visible="1"><a tabindex="-1" href="./VIET RENT_files/VIET RENT.html">Sign Up</a></li><li data-toggle="modal" data-target="#LogInModal"><a tabindex="-1" href="./VIET RENT_files/VIET RENT.html">Login</a></li><li 0="" visible="1"><a tabindex="-1" href="http://localhost:10088/VietRent/index.php?r=site/#">List Your Space</a></li></ul></div></nav>
+
+<div id="content">
+	<!-- Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="container">
+    <div class="row">
+      	<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 well well-sm">
+            	Sign up with facebook, google, twitter or
+            	<form id="sign_up_form" action="http://localhost:10088/VietRent/index.php?r=form/proceedRegister" method="post">					<fieldset>
+					<div class="form-group"><label class="control-label required" for="SignUpForm_firstname">Firstname <span class="required">*</span></label><div><div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span><input name="SignUpForm[firstname]" id="SignUpForm_firstname" class="form-control" placeholder="" type="text"></div><p id="SignUpForm_firstname_em_" style="display:none" class="help-block"></p></div></div>					<div class="form-group"><label class="control-label required" for="SignUpForm_lastname">Lastname <span class="required">*</span></label><div><div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span><input name="SignUpForm[lastname]" id="SignUpForm_lastname" class="form-control" placeholder="" type="text"></div><p id="SignUpForm_lastname_em_" style="display:none" class="help-block"></p></div></div>					<div class="form-group"><label class="control-label required" for="SignUpForm_email">Email <span class="required">*</span></label><div><input name="SignUpForm[email]" id="SignUpForm_email" class="form-control" placeholder="" type="email"><p id="SignUpForm_email_em_" style="display:none" class="help-block"></p></div></div>					<div class="form-group"><label class="control-label required" for="SignUpForm_phone">Phone <span class="required">*</span></label><div><div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span><input name="SignUpForm[phone]" id="SignUpForm_phone" class="form-control" placeholder="" type="text"></div><p id="SignUpForm_phone_em_" style="display:none" class="help-block"></p></div></div>					<div class="form-group"><label class="control-label required" for="SignUpForm_password">Password <span class="required">*</span></label><div><input name="SignUpForm[password]" id="SignUpForm_password" class="form-control" placeholder="" type="password"><p id="SignUpForm_password_em_" style="display:none" class="help-block"></p></div></div>					</fieldset>
+					<div class="form-group"><div class="col-lg-offset-2 col-lg-10"><button class="btn btn-primary" type="submit" name="yt0">Submit</button></div></div>					</form>        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade in" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+	<div class="omb_login col-xs-12 col-sm-12 col-md-6 col-md-offset-3 well well-sm">
+    	<h3 class="omb_authTitle">Welcome to VietRent !</h3>
+		<div class="row omb_row-sm-offset-3 omb_socialButtons">
+    	    <div class="col-xs-4 col-sm-2">
+		        <a href="./VIET RENT_files/VIET RENT.html" class="btn btn-lg btn-block omb_btn-facebook">
+			        <i class="fa fa-facebook visible-xs"></i>
+			        <span class="hidden-xs">Facebook</span>
+		        </a>
+	        </div>
+        	<div class="col-xs-4 col-sm-2">
+		        <a href="./VIET RENT_files/VIET RENT.html" class="btn btn-lg btn-block omb_btn-twitter">
+			        <i class="fa fa-twitter visible-xs"></i>
+			        <span class="hidden-xs">Twitter</span>
+		        </a>
+	        </div>	
+        	<div class="col-xs-4 col-sm-2">
+		        <a href="./VIET RENT_files/VIET RENT.html" class="btn btn-lg btn-block omb_btn-google">
+			        <i class="fa fa-google-plus visible-xs"></i>
+			        <span class="hidden-xs">Google+</span>
+		        </a>
+	        </div>	
+		</div>
+
+		<div class="row omb_row-sm-offset-3 omb_loginOr">
+			<div class="col-xs-12 col-sm-6">
+				<hr class="omb_hrOr">
+				<span class="omb_spanOr">or</span>
+			</div>
+		</div>
+
+		<form id="Login_Form" action="http://localhost:10088/VietRent/index.php?r=form/proceedLogin" method="post">		<fieldset>
+		<legend>Legend</legend>
+		<div class="form-group has-success"><label class="control-label required" for="LoginForm_email">Email <span class="required">*</span></label><div><div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span><input name="LoginForm[email]" id="LoginForm_email" class="form-control" placeholder="" type="email"></div><p id="LoginForm_email_em_" style="display: none;" class="help-block"></p></div></div>		<div class="form-group has-error"><label class="control-label required" for="LoginForm_password">Password <span class="required">*</span></label><div><input name="LoginForm[password]" id="LoginForm_password" class="form-control" placeholder="" type="password"><p id="LoginForm_password_em_" style="" class="help-block">Incorrect email or password.</p></div></div>		<p id="LoginForm_password_em_" style="display:none" class="help-block"></p>		<p id="LoginForm_email_em_" style="display:none" class="help-block"></p>		</fieldset>
+		<div class="form-group"><div class="col-lg-offset-2 col-lg-10"><button class="btn btn-primary" type="submit" name="yt1">Submit</button></div></div>		
+		</form>		
+	</div>
+</div>
+<!-- End of Modal -->
+<div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="./VIET RENT_files/home1.jpg" alt="First slide">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <img src="./VIET RENT_files/home2.jpg" alt="Second slide">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./VIET RENT_files/home3.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="http://localhost:10088/VietRent/index.php#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="http://localhost:10088/VietRent/index.php#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
+                        </span></a>
+            </div>
+            <div class="main-text">	
+                <div class="col-md-12 text-center">
+                		<h1 class="hidden-xs">Welcome Home</h1>
+ 						<a class="btn btn-clear btn-sm btn-min-block" style="width: 20%" href="http://www.jquery2dotnet.com/" data-toggle="modal" data-target="#myModal"><h6>HOW WE WORK</h6></a>
+                </div>
+            </div>
+        </div>
+ </div>
+ <div class="row">
+ 	 <div class="col-md-12 text-center well">
+          
+ 	 </div>
+ </div>
+ 
+
+            <div class="row">
+                <div class="board">
+                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a href="http://localhost:10088/VietRent/index.php#home" data-toggle="tab" title="welcome">
+                      <span class="round-tabs one">
+                              <i class="glyphicon glyphicon-home" style="padding-top: 15px"></i>
+                      </span> 
+                  </a></li>
+
+                  <li><a href="http://localhost:10088/VietRent/index.php#profile" data-toggle="tab" title="profile">
+                     <span class="round-tabs two">
+                         <i class="glyphicon glyphicon-user" style="padding-top: 15px"></i>
+                     </span> 
+           </a>
+                 </li>
+                 <li><a href="http://localhost:10088/VietRent/index.php#messages" data-toggle="tab" title="bootsnipp goodies">
+                     <span class="round-tabs three">
+                          <i class="glyphicon glyphicon-gift" style="padding-top: 15px"></i>
+                     </span> </a>
+                     </li>
+
+                     <li><a href="http://localhost:10088/VietRent/index.php#settings" data-toggle="tab" title="blah blah">
+                         <span class="round-tabs four">
+                              <i class="glyphicon glyphicon-comment" style="padding-top: 15px"></i>
+                         </span> 
+                     </a></li>
+
+                     <li><a href="http://localhost:10088/VietRent/index.php#doner" data-toggle="tab" title="completed">
+                         <span class="round-tabs five">
+                              <i class="glyphicon glyphicon-ok" style="padding-top: 15px"></i>
+                         </span> </a>
+                     </li>
+                     
+                     </ul></div>
+
+                     <div class="tab-content">
+                      <div class="tab-pane fade in active" id="home">
+
+                          <h3 class="head text-center">Welcome to Bootsnipp<sup>™</sup> <span style="color:#f48260;">♥</span></h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                      </div>
+                      <div class="tab-pane fade" id="profile">
+                          <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                          
+                      </div>
+                      <div class="tab-pane fade" id="messages">
+                          <h3 class="head text-center">Bootsnipp goodies</h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                      </div>
+                      <div class="tab-pane fade" id="settings">
+                          <h3 class="head text-center">Drop comments!</h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                      </div>
+                      <div class="tab-pane fade" id="doner">
+  <div class="text-center">
+    <i class="img-intro icon-checkmark-circle"></i>
+</div>
+<h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
+<p class="narrow text-center">
+  Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+</p>
+</div>
+<div class="clearfix"></div>
+</div>
+
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 text-center">
+        <h1>Modal with blur effect</h1>
+        <h2>Put here whatever you want here</h2>
+        <h4>For instance, a login form or an article content</h4>
+        <h4><kbd>esc</kbd> or click anyway to close</h4>
+        <hr>
+        <div class="alert alert-info"><h4>I can add a close button if you want.<br>Please, tell me in comments :)</h4></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- content -->
+
+
+<script type="text/javascript" src="./VIET RENT_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./VIET RENT_files/typeahead.js"></script>
+<script type="text/javascript" src="./VIET RENT_files/viet-rent.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#sign_up_form').yiiactiveform({'validateOnSubmit':true,'validationUrl':'/VietRent/index.php?r=form/register','attributes':[{'id':'SignUpForm_firstname','inputID':'SignUpForm_firstname','errorID':'SignUpForm_firstname_em_','model':'SignUpForm','name':'firstname','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Firstname cannot be blank.");
+}
+
+}},{'id':'SignUpForm_lastname','inputID':'SignUpForm_lastname','errorID':'SignUpForm_lastname_em_','model':'SignUpForm','name':'lastname','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Lastname cannot be blank.");
+}
+
+}},{'id':'SignUpForm_email','inputID':'SignUpForm_email','errorID':'SignUpForm_email_em_','model':'SignUpForm','name':'email','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Email cannot be blank.");
+}
+
+}},{'id':'SignUpForm_phone','inputID':'SignUpForm_phone','errorID':'SignUpForm_phone_em_','model':'SignUpForm','name':'phone','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Phone cannot be blank.");
+}
+
+}},{'id':'SignUpForm_password','inputID':'SignUpForm_password','errorID':'SignUpForm_password_em_','model':'SignUpForm','name':'password','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Password cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#Login_Form').yiiactiveform({'validateOnSubmit':true,'validationUrl':'/VietRent/index.php?r=form/login','attributes':[{'id':'LoginForm_email','inputID':'LoginForm_email','errorID':'LoginForm_email_em_','model':'LoginForm','name':'email','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Email cannot be blank.");
+}
+
+}},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':true,'inputContainer':'div.form-group','errorCssClass':'has-error','successCssClass':'has-success','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Password cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+$('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').tooltip()
+});
+/*]]>*/
+</script>
+
+
+<footer>
+<div class="container">
+	<hr>
+        <div class="text-center center-block">
+                <h5>Follow Us On
+                <a href="./VIET RENT_files/VIET RENT.html"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+	            <a href="./VIET RENT_files/VIET RENT.html"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+	            <a href="./VIET RENT_files/VIET RENT.html"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+	            <a href="./VIET RENT_files/VIET RENT.html"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+	            </h5>
+		</div>
+</div></footer>
+
+<div class="modal-backdrop fade in"></div></body></html>

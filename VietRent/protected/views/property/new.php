@@ -1,0 +1,1 @@
+<?php $this->renderPartial('/_modalForm', array('login_model' => $login_model, 'signup_model' => $signup_model)); ?>

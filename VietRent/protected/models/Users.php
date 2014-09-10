@@ -9,6 +9,7 @@
  * @property string $user_last_name
  * @property string $user_mobile
  * @property string $user_email
+ * @property string $user_password
  * @property string $user_DOB
  * @property string $user_profile_pic_url
  * @property string $user_create_time
@@ -32,14 +33,14 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_first_name, user_last_name, user_mobile, user_email, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'required'),
-			array('user_first_name, user_last_name', 'length', 'max'=>30),
+			array('user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'required'),
+			array('user_first_name, user_last_name, user_password', 'length', 'max'=>30),
 			array('user_mobile', 'length', 'max'=>15),
 			array('user_email', 'length', 'max'=>80),
 			array('user_profile_pic_url', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('user_id, user_first_name, user_last_name, user_mobile, user_email, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'safe', 'on'=>'search'),
+			array('user_id, user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +66,7 @@ class Users extends CActiveRecord
 			'user_last_name' => 'User Last Name',
 			'user_mobile' => 'User Mobile',
 			'user_email' => 'User Email',
+			'user_password' => 'User Password',
 			'user_DOB' => 'User Dob',
 			'user_profile_pic_url' => 'User Profile Pic Url',
 			'user_create_time' => 'User Create Time',
@@ -95,6 +97,7 @@ class Users extends CActiveRecord
 		$criteria->compare('user_last_name',$this->user_last_name,true);
 		$criteria->compare('user_mobile',$this->user_mobile,true);
 		$criteria->compare('user_email',$this->user_email,true);
+		$criteria->compare('user_password',$this->user_password,true);
 		$criteria->compare('user_DOB',$this->user_DOB,true);
 		$criteria->compare('user_profile_pic_url',$this->user_profile_pic_url,true);
 		$criteria->compare('user_create_time',$this->user_create_time,true);
