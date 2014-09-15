@@ -60,7 +60,7 @@
 
 <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="omb_login col-xs-12 col-sm-12 col-md-6 col-md-offset-3 well well-sm">
-    	<h3 class="omb_authTitle">Welcome to VietRent !</h3>
+    	<h3 class="omb_authTitle">Welcome to Viet Rent!</h3>
 		<div class="row omb_row-sm-offset-3 omb_socialButtons">
     	    <div class="col-xs-4 col-sm-2">
 		        <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
@@ -102,7 +102,7 @@
 					));
 		?>
 		<fieldset>
-		<legend>Legend</legend>
+		<legend>Sign in with Email</legend>
 		<?php
 		echo $form->emailFieldControlGroup($login_model, 'email', array(
 		    'prepend' => BsHtml::icon(BsHtml::GLYPHICON_USER)

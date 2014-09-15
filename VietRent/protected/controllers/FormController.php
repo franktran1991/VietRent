@@ -48,7 +48,21 @@ class FormController extends Controller
 		$user->password = $_POST['LoginForm']['password'];
 		$user->rememberMe = $_POST['LoginForm']['rememberMe'];
 		$user->login();
-		$this->redirect(Yii::app()->homeUrl);
+		if(isset($_POST['new_property'])){
+			$this->redirect(array('property/new'));
+		}
+		else{
+			$this->redirect(Yii::app()->homeUrl);	
+		}
+	}
+	
+	public function actionUpload_Image(){
+		$temp_file = $_FILES['file']['tmp_name'];
+		$file_name = $_FILES['file']['name'];
+		$uploadfile = Yii::app()->basePath."/public/" . $file_name;
+		move_uploaded_file($temp_file,$uploadfile);
+			
+		//$tempdir = 
 	}
 	
 

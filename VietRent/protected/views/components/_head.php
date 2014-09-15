@@ -18,7 +18,9 @@ $themePath = Yii::app()->baseUrl;
 $cs
     ->registerCssFile($themePath.'/assets/css/bootstrap.css')
     ->registerCssFile($themePath.'/assets/css/viet-rent.css')
-    ->registerCssFile($themePath.'/assets/css/bootstrap-theme.css');
+    ->registerCssFile($themePath.'/assets/css/bootstrap-theme.css')
+    ->registerCssFile($themePath.'/assets/css/dropzone/dropzone.css')
+    ->registerCssFile($themePath.'/assets/css/dropzone/basic.css');
 
 /**
  * JavaScripts
@@ -29,6 +31,9 @@ $cs
     ->registerScriptFile($themePath.'/assets/js/bootstrap.min.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/assets/js/typeahead.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/assets/js/viet-rent.js',CClientScript::POS_END)
+    //->registerScriptFile($themePath.'/assets/js/dropzone/dropzone-amd-module.js',CClientScript::POS_END)
+    //->registerScriptFile($themePath.'/assets/js/dropzone-amd-module.min.js',CClientScript::POS_END)
+    //->registerScriptFile($themePath.'/assets/js/dropzone/dropzone.min.js',CClientScript::POS_END)
     ->registerScript('tooltip',
         "$('[data-toggle=\"tooltip\"]').tooltip();
         $('[data-toggle=\"popover\"]').tooltip()"
@@ -42,4 +47,5 @@ $cs
 <![endif]-->
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	
 </head>

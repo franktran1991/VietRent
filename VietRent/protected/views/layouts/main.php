@@ -1,4 +1,4 @@
-<?php $this->renderPartial('/_head');?>
+<?php $this->renderPartial('/components/_head');?>
 
 <body>
 
@@ -52,4 +52,4 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
 ?>
 <?php echo $content;?>
 </body>
-<?php $this->renderPartial('/_footer');?>
+<?php $this->renderPartial('/components/_footer');?>

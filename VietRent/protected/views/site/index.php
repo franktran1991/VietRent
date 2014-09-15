@@ -3,7 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<?php $this->renderPartial('/_modalForm', array('login_model' => $login_model, 'signup_model' => $signup_model)); ?>
+<?php $this->renderPartial('/components/_modalForm', array('login_model' => $login_model, 'signup_model' => $signup_model)); ?>
 <div class="row">
         <div class="col-md-12">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
