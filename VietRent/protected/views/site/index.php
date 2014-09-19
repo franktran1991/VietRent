@@ -10,17 +10,17 @@ $this->pageTitle=Yii::app()->name;
                 
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="/VietRent/images/home1.jpg" alt="First slide">
+                        <img src="images/home1.jpg" alt="First slide">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/VietRent/images/home2.jpg" alt="Second slide">
+                        <img src="images/home2.jpg" alt="Second slide">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/VietRent/images/home3.jpg" alt="Third slide">
+                        <img src="images/home3.jpg" alt="Third slide">
                         <div class="carousel-caption">
                         </div>
                     </div>
