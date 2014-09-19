@@ -14,6 +14,7 @@ return array(
 
 	'aliases' => array(
     'bootstrap' => 'ext.bootstrap',
+
 ),
 	// autoloading model and component classes
 	'import'=>array(

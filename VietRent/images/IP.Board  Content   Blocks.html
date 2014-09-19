@@ -1,0 +1,1288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0199)http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&wizard_session=dfae5afbe298ff5052cec8f07d795a9c&continuing=1&step=3 -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="Fri, 01 January 1999 01:00:00 GMT">
+	<link rel="shortcut icon" href="http://localhost:10088/gx.1/forums/favicon.ico">
+
+	<title>IP.Board: Content &gt; Blocks</title>
+	<script type="text/javascript">
+		jsDebug = 1;
+		USE_RTE = 1;
+		inACP   = true;
+		isRTL	= false;
+	</script>	<style type="text/css" media="all">
+		@import url( "http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/acp.css?ipbv=ab17069038e8bedfcef2de3e811b3ad7" );
+		@import url( "http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/acp_editor.css?ipbv=ab17069038e8bedfcef2de3e811b3ad7" );
+	</style>			<link rel="stylesheet" type="text/css" href="./IP.Board  Content   Blocks_files/ccs.css">	<!--[if IE]>
+		<style type='text/css' media='all'>
+			@import url( "http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/acp_ie_tweaks.css" );
+		</style>
+	<![endif]-->		<style type="text/css" media="all">
+.filter_box {
+	background: #efefef url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/filterbar_bg.png ) repeat-x bottom;
+}
+
+#main_content table.sortable tr th.sort.sorting {
+	background: #528f6c;
+}
+
+#main_content table.sortable.desc tr th.sort:hover .sort_order,
+#main_content table.sortable tr th.sort:hover .sort_order {
+	background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/sort_desc_off.png ) no-repeat right;
+}
+
+	#main_content table.sortable.asc tr th.sort:hover .sort_order {
+		background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/sort_asc_off.png ) no-repeat right;
+	}
+
+	#main_content table.sortable.desc tr th.sort.sorting .sort_order,
+	#main_content table.sortable tr th.sort.sorting .sort_order {
+		background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/sort_desc_on.png ) no-repeat right;
+	}
+	
+	#main_content table.sortable.asc tr th.sort.sorting .sort_order {
+		background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/sort_asc_on.png ) no-repeat right;
+	}
+
+.article_expander h4 {
+	background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/folder_closed.png ) no-repeat 2px 2px;
+}
+
+	.article_expander.open h4 {
+		background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/folder_open.png ) no-repeat 2px 2px;
+	}
+
+.date_button {
+	background: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/icons/date.png ) no-repeat;
+}
+
+.icon.ccs-file {
+	background-image: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/page.png );
+}
+
+.icon.ccs-css {
+	background-image: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/css.png );
+}
+
+.icon.ccs-js {
+	background-image: url( http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/ccs/js.png );
+}
+		</style>		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/prototype.js"></script>
+		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/scriptaculous-cache.js"></script>
+		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/ipb.js"></script>
+		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.menu.js"></script>
+		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.js"></script>
+		<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.tabs.js"></script>	<script type="text/javascript" src="./IP.Board  Content   Blocks_files/ipb.lang.js"></script>
+	<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.lang.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="./IP.Board  Content   Blocks_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./IP.Board  Content   Blocks_files/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		var jQ = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.jquery.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		ipb.vars['st']	= "";
+		ipb.vars['base_url']	= "http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&";
+		ipb.vars['front_url']	= "http://localhost:10088/gx.1/forums/index.php?";
+		ipb.vars['app_url']		= "http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&amp;app=ccs&amp;";
+		ipb.vars['upload_url']	= "http://localhost:10088/gx.1/forums/uploads";
+		ipb.vars['image_url'] 	= "http://localhost:10088/gx.1/forums/pagnadmin/applications_addon/ips/ccs/skin_cp/images/";
+		ipb.vars['image_acp_url'] 	= "http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/";
+		ipb.vars['md5_hash']	= "cc173a7b15101e5de07187a26535802b";
+		ipb.vars['is_touch']    = false;
+		ipb.vars['member_group'] = {"g_mem_info":"1"};
+		ipb.vars['member_id']    = parseInt("109379");
+		
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= '';
+		ipb.vars['cookie_domain'] 		= '';
+		ipb.vars['cookie_path']			= '';
+		ipb.templates['close_popup']	= "<img src='http://localhost:10088/gx.1/forums/public/style_images/master/close_popup.png' alt='x' />";
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Jump To Page</h3><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='Go' class='realbutton' id='#{id}_submit' /></div>");
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'>Loading...</div>";
+		ipb.templates['global_notify'] 	= new Template("<div class='popupWrapper'><div class='popupInner'><div class='ipsPad'>#{message} #{close}</div></div></div>");
+		ipb.templates['global_notify_close']	= "<span id='ipsGlobalNotification_close' class='realbutton'>Ok</span>";
+		ipb.templates['acp_bookmark_add']       = new Template("<h3>Bookmark this page</h3><div class='ipsPad' id='bmcontent'>Bookmark Title: <input type='text' class='input_text' style='width:99%' name='bookmarkTitle' value='#{title}' /><br /><input type='checkbox' name='homePage' value='1' /> <span class='desctext'>Make home page (first page loaded after logging in)</span><br /><br /><div style='text-align:center'><input type='button' class='realbutton' value='Save' /></div></div>" );
+	//]]>
+	</script>
+	<script type="text/javascript">
+		Loader.boot();
+		acp = new IPBACP;
+	</script>
+</head>
+<body id="ipboard_body" data-bookmarkurl="app=ccs&amp;module=blocks&amp;section=wizard&amp;wizard_session=dfae5afbe298ff5052cec8f07d795a9c&amp;continuing=1&amp;step=3" data-bookmarkable="true" data-bookmarked="false" class=" clearfix">
+<!-- Inline Form Box -->
+<div id="modal" style="display: none; height: 867px;"></div>
+
+<div id="inlineFormWrap" style="display: none;">
+	<div id="inlineFormInnerWrap">
+		<div id="inlineFormInnerClose" onclick="Effect.Fade( &#39;inlineFormWrap&#39;, { duration: .5 } );"></div>
+		<div id="inlineFormInnerTitle"></div>
+		<div id="inlineErrorBox">
+			<img src="./IP.Board  Content   Blocks_files/stopLarge.png">
+			<strong>Error</strong>
+			<div id="inlineErrorText"></div>
+		</div>
+		<div id="inlineFormInnerContent"></div>
+		<div id="inlineFormLoading">
+			Please Wait...
+			<br><br>
+			<img src="./IP.Board  Content   Blocks_files/loading_big.gif" alt="loading" id="search_loading">
+		</div>
+	</div>
+</div>
+<!-- / Inline Form Box -->
+	<div id="header">
+		<div id="search" class="right">
+			<img src="./IP.Board  Content   Blocks_files/search_icon_white.png" alt=""> <input type="text" value="Live search ACP..." id="acpSearchKeyword" class="inactive" autocomplete="off"><img src="./IP.Board  Content   Blocks_files/loading.gif" id="acp_loading" style="display: none">
+		</div>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&" title="Home">
+			<img src="./IP.Board  Content   Blocks_files/logo.png" alt="Logo">
+		</a>
+		<div class="logged_in">
+			Logged in as 2359lee
+			<ul id="user_links" class="ipsList_inline">
+				<li>
+					<a href="http://localhost:10088/gx.1/forums/" target="_blank">Community</a>
+				</li>
+				<li>
+					<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=mycp&section=dashboard">Dashboard</a>
+				</li>
+				<li>
+					<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&&module=login&do=login-out">Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="live_search_results" style="display: none">
+		<div id="ls_sections">
+			<ul>				<li id="ls_settings">Settings<span class="count" style="display: none;"></span></li>				<li id="ls_members">Members<span class="count" style="display: none;"></span></li>				<li id="ls_groups">Groups<span class="count" style="display: none;"></span></li>				<li id="ls_forums">Forums<span class="count" style="display: none;"></span></li>				<li id="ls_location">Pages<span class="count" style="display: none;"></span></li><li id="ls_nexus">Nexus<span class="count" style="display: none;"></span></li>				<li id="ls_marketplace" title="Search the IPS Marketplace for applications, hooks, skins and more.">Search IPS Marketplace</li>
+			</ul>
+		</div>
+		<div id="ls_results">
+			<span id="ls_no_results" style="display: none">There were no results for your search</span>
+			<div id="ls_settings_panel" style="display: none;"></div>
+			<div id="ls_members_panel" style="display: none;"></div>
+			<div id="ls_groups_panel" style="display: none;"></div>
+			<div id="ls_forums_panel" style="display: none;"></div>
+			<div id="ls_location_panel" style="display: none;"></div><div id="ls_nexus_panel" style="display: none;"></div>			<div id="ls_marketplace_panel" style="display: none;">
+				<div class="pad">
+					The IPS Marketplace is the best place to find new skins, applications and hooks for your community.
+					<br><br>
+
+					<a href="http://community.invisionpower.com/files/" class="realbutton">Go to IPS Marketplace</a>
+				</div>
+			</div>
+		</div>
+		<img src="./IP.Board  Content   Blocks_files/live_search_stem.png" id="ls_stem">
+	</div>
+	<!-- pre load -->
+	<img src="./IP.Board  Content   Blocks_files/bookmark_white_20.png" style="display:none">
+	<img src="./IP.Board  Content   Blocks_files/bookmark_grey_20.png" style="display:none">
+	<div id="app_bar">
+		<a class="right" id="edit_tabs" href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&wizard_session=dfae5afbe298ff5052cec8f07d795a9c&continuing=1&step=3#" title="Set up the app bar just the way you want">Edit Tabs</a>
+		<ul id="app_menu" class="app_menu root">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&wizard_session=dfae5afbe298ff5052cec8f07d795a9c&continuing=1&step=3#" id="bookmarks_button"><img src="./IP.Board  Content   Blocks_files/bookmark_white_20.png"></a>
+		<ul id="bookmarks_items" class="right" style="display: none;"><li style="text-align: center; min-width:200px" id="bookmarkAddRow"><a id="addBookmark" class="mini_button secondary" style="margin: 5px 0px">Add bookmark</a><a id="manageBookmark" class="mini_button secondary">Manage</a></li></ul>
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core">System</a>
+		<ul id="menu_core" style="display: none;">
+	<li class="has_sub">
+		<span>My Control Panel<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=mycp&section=dashboard&">My Dashboard</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=mycp&section=details&">Change My Details</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=settings&section=settings&do=settingsview">System Settings</a>
+	</li>
+	<li class="has_sub">
+		<span>Tools &amp; Settings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=performance&">Performance Mode</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=licensekey&">License Key</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=uagents&do=list">User Agent Management</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=rebuild&do=rebuild_overview">Recount &amp; Rebuild</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=rebuild&do=tools">Clean Up Tools</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=help&do=help_overview">Manage Help Files</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=cache&do=cache_overview">Cache Management</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=qanda&">Question &amp; Answer Challenge</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=api&">API Users</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=login&do=login_overview">Log In Management</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=sharelinks&">Share Links</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=tools&section=incomingEmails&">Incoming Email Rules</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Applications &amp; Modules<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=applications&section=applications&do=applications_overview">Manage Applications &amp; Modules</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=applications&section=hooks&do=hooks_overview">Manage Hooks</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=applications&section=enhancements&">Community Enhancements</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Report Center<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=report&section=reports&do=plugin">Plugin Manager</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=report&section=reports&do=status">Status &amp; Severity Levels</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>System<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=system&section=taskmanager&do=overview">System Scheduler</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=system&section=security&">Security Center</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=system&section=security&do=list_admins">List Admins</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>SEO Advice<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=seo&section=advice&">SEO Advice</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=seo&section=activity&">Search Activity</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums">Forums</a>
+		<ul id="menu_forums" style="display: none;">
+	<li class="has_sub">
+		<span>Forums<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=forums&section=forums&do=forums_overview">Manage Forums</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=forums&section=multimods&do=overview">Topic Multi-Moderation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Post Attachments<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=attachments&section=types&do=overview">Attachment Types</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=attachments&section=stats&do=overview">Attachment Stats</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=attachments&section=search&do=overview">Attachment Search</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>RSS Management<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=rss&section=import&do=overview">RSS Import</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=rss&section=export&do=overview">RSS Export</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Archiving<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=archive&section=archive&do=forums_overview">Archive Overview</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=archive&section=archive&do=rules">Archive Rules</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members">Members</a>
+		<ul id="menu_members" style="display: none;">
+	<li class="has_sub">
+		<span>Members<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=members&do=members_overview">Manage Members</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=ranks&do=ranks_overview">Member Ranks</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=reputation&do=overview">Member Reputation</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=tools&">Member Management Tools</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=members&do=add">Add New Member</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=banfilters&">Ban Filters</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=members&section=notifications&">Notification Defaults</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Member Groups<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=groups&section=groups&do=groups_overview">Manage Member Groups</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=groups&section=permissions&do=overview">Manage Member Permissions</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=cfields&section=customfields">Custom Profile Fields</a>
+	</li>
+	<li class="has_sub">
+		<span>Warnings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=warnings&section=reasons&">Reasons</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=warnings&section=actions&">Actions</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=bulkmail&section=bulkmail&do=bulk_mail">Bulk Mail</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=members&module=restrictions&section=restrictions&do=overview">Manage Admin Restrictions</a>
+	</li>
+</ul>
+
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates">Look &amp; Feel</a>
+		<ul id="menu_lookfeel" style="display: none;">
+	<li class="has_sub">
+		<span>Look &amp; Feel<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=skinsets&do=overview">Manage Skin Sets &amp; Templates</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=meta&">Manage Meta Tags</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=systemTemplates&">Manage System Templates</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=tools&do=splash">Template Tools</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=skindiff&do=overview">Template Merge Center</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=searchandreplace&do=showform">Search and Replace</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=easylogo&">Easy Logo Changer</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=importexport&do=overview">Import / Export</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=templates&section=external&do=overview">Externally Edit Templates &amp; CSS</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Post Content<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=posts&section=emoticons&do=overview">Emoticon Management</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=posts&section=bbcode&do=overview">BBCode Management</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=posts&section=media&do=overview">Manage Media Tag</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=posts&section=badwords&do=overview">Bad Word Filters</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=posts&section=acronyms&">Acronym Expansion</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=languages&section=manage_languages">Manage Languages</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=mobileapp&section=images&do=overview">Mobile App</a>
+	</li>
+</ul>
+
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics">Support</a>
+		<ul id="menu_support" style="display: none;">
+	<li class="has_sub">
+		<span>Diagnostics<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&">Overview</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=whitespace">Whitespace Checker</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=filepermissions">Permissions Checker</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=connections">Connection Checker</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=dbchecker">Database Checker</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=dbindex">Database Index Checker</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=diagnostics&section=diagnostics&do=email">Email Tester</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>SQL Management<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=sql&section=toolbox&do=overview">SQL Toolbox</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=sql&section=toolbox&do=backup">SQL Back Up</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=sql&section=toolbox&do=runtime">SQL Runtime Info</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=sql&section=toolbox&do=system">SQL System Vars</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=sql&section=toolbox&do=processes">SQL Processes</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Help &amp; Support<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=docs">Documentation</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=support">Technical Support</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=resources">Additional Resources</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=contact">IPS Contact Information</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=features">Feature Requests</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=help&section=quickhelp&do=redirect&id=bugs">Report a Bug</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li class="">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics">Stats &amp; Logs</a>
+		<ul id="menu_reports" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=logs&section=logsSplash">Logs</a>
+	</li>
+	<li class="has_sub">
+		<span>Statistics Center<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=reg">Registration Stats</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=topic">New Topic Stats</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=post">Post Stats</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=msg">Personal Message</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=views">Topic Views</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=forums&module=statistics&section=stats&do=spam">Spam Service</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>		<li class="active">
+			<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=core&module=applications&section=applications&do=applications_overview">Other Apps</a>
+			<ul id="menu__other" style="display: none;">
+					<li id="app_ccs" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs">
+			<span class="ipsBadge badge_purple">IPS</span>&nbsp;&nbsp;
+			Content
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_ccs" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=pages&section=list">Page Manager</a>
+	</li>
+	<li class="has_sub">
+		<span>Articles<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=configure&do=home">Articles Configuration</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=settings&">Promote Article Settings</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=frontpage&do=frontpage">Frontpage Manager</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=articles&do=articles">Manage Articles</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=articles&do=add">Create New Article</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=categories&do=list">Manage Categories</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=fields&do=fields">Manage Fields</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=editors&do=editors">Manage Editors</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=databases&section=databases">Databases</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=blocks">Blocks</a>
+	</li>
+	<li class="has_sub">
+		<span>Templates<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=blocks&">Block Templates</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=page">Page Templates</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=database">Database Templates</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=article">Article Templates</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=media&section=list">Media Manager</a>
+	</li>
+	<li class="has_sub">
+		<span>Settings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=settings&">Basic</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=settings&do=advanced">Advanced</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=menu&">Navigation Menu</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li id="app_gamifycation">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=gamifycation">
+			
+			Gamification
+		</a>
+		
+	</li>	<li id="app_supernewsfeed" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=supernewsfeed">
+			
+			[HSC] Super News Feed
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_supernewsfeed" style="display: none;">
+	<li class="has_sub">
+		<span>Configuration<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=supernewsfeed&module=config&section=settings&do=settings">General Settings</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=supernewsfeed&module=config&section=settings&do=data">Data Capture</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=supernewsfeed&module=config&section=settings&do=global">Global Feed</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=supernewsfeed&module=rss&section=rss&do=show">RSS Feeds</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_referrals" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=referrals">
+			
+			(DP34) Referrals System
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_referrals" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=referrals&module=logs&section=logs&do=view">Logs</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=referrals&module=ranking&section=ranking&do=view">Ranking</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=referrals&module=settings&section=settings&do=settings">Manage Settings</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=referrals&module=tools&section=tools">Tools</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_masspm" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=masspm">
+			
+			(DP34) Mass PM
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_masspm" style="display: none;">
+	<li class="has_sub">
+		<span>Manage Mass PMs<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=masspm&module=core&section=main&do=viewAllPms">Show All Messages</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=masspm&module=core&section=main&do=addMassPm">Send New Mass PM</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=masspm&module=settings&section=settings&do=settings">Settings</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_upload" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=upload">
+			
+			Upload Images
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_upload" style="display: none;">
+	<li class="has_sub">
+		<span>Upload Images<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=upload&module=overview&section=overview&do=overview">Overview</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=upload&module=overview&section=overview&do=settings">Settings</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li id="app_convert" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=convert">
+			<span class="ipsBadge badge_purple">IPS</span>&nbsp;&nbsp;
+			IPS Converters
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_convert" style="display: none;">
+	<li class="has_sub">
+		<span>Converters<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=convert&module=setup&section=setup&">Start New Conversion</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=convert&module=setup&section=continue&">Continue Conversion</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=convert&module=setup&section=manage&">Manage Conversions</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=convert&module=setup&section=lock&">Lock System</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li id="app_calendar" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=calendar">
+			<span class="ipsBadge badge_purple">IPS</span>&nbsp;&nbsp;
+			Calendar
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_calendar" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=calendar&module=calendar&section=calendars&do=overview">Calendar Management</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=calendar&module=settings&section=settings">Calendar Settings</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=calendar&module=icalendar&section=ical">Import iCalendar Feeds</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_ipchat" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ipchat">
+			<span class="ipsBadge badge_purple">IPS</span>&nbsp;&nbsp;
+			Chat
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_ipchat" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ipchat&module=ipschat&section=chat">IP.Chat</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ipchat&module=logs&section=logs">Logs</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ipchat&module=tools&section=tools">Tools</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_nexus" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus">
+			<span class="ipsBadge badge_purple">IPS</span>&nbsp;&nbsp;
+			Nexus
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_nexus" style="display: none;">
+	<li class="has_sub">
+		<span>Orders<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=payments&section=transactions&">Transactions</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=payments&section=invoices&">Invoices</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=payments&section=shiporders&">Shipping Orders</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=payments&section=payouts&">Payout Requests</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=payments&section=settings&">Payments &amp; Invoice Settings</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=tickets&section=list">Support Requests</a>
+	</li>
+	<li class="has_sub">
+		<span>Customers<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=customers&section=search&">Search Customers</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=customers&section=fields&">Customer Fields</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Store Settings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=packages&">Packages</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=customfields&">Custom Package Fields</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=tax&">Tax Classes</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=shipping&">Shipping Methods</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=donations&">Donation Goals</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=coupons&">Coupons</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=fraud&">Fraud Rules</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=gateways&">Payment Gateways</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=stock&section=settings&">Store &amp; Client Area Settings</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Hosting Settings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=hosting&section=queues&">Queues</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=hosting&section=servers&">Servers</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=hosting&section=errors&">Error Log</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=hosting&section=settings&">Hosting Settings</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=hosting&section=eom&">Expected Output Monitoring</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Support Settings<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=departments&">Departments</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=customfields&">Custom Support Fields</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=staff&staff_view">Staff</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=statuses&">Statuses</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=severities&">Severities</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=stockactions&">Stock Actions</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=support&section=settings&">Support Settings</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Promotion<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=promotion&section=advertisements&">Advertisements</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=promotion&section=referrals&">Referral Banners</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=promotion&section=refrules&">Commission Rules</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=promotion&section=settings&">Promotion Settings</a>
+			</li>
+		</ul>
+	</li>
+	<li class="has_sub">
+		<span>Reports<span class="menu_arrow">»</span></span>
+		<ul style="display: none;">
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=purchases&">Purchases</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=income&">Income</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=markets&">Markets</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=supportrequests&">Support Request Volume</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=supportstaff&">Support Staff Replies</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=supportaudit&">Support Staff Audit</a>
+			</li>
+			<li>
+				<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=nexus&module=reports&section=supportsatisfaction&">Customer Satisfaction</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	</li>	<li id="app_gxcoins" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=gxcoins">
+			
+			GxCoins
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_gxcoins" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=gxcoins&module=config&section=rewardtable">Config</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=gxcoins&module=transactionlog&section=log">Transaction log</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_autorewarding" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=autorewarding">
+			
+			AutoRewarding
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_autorewarding" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=autorewarding&module=auto_reward&section=auto_reward">Upload Rewards</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=autorewarding&module=list_reward&section=list_reward">Rewards List</a>
+	</li>
+</ul>
+
+	</li>	<li id="app_champion" class="has_sub">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=champion">
+			
+			Champion
+		<span class="menu_arrow">»</span></a>
+		<ul id="menu_champion" style="display: none;">
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=champion&module=upload_champion&section=upload_champion">upload_champion</a>
+	</li>
+	<li>
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=champion&module=list_champion&section=list_champion">list_champion</a>
+	</li>
+</ul>
+
+	</li>
+			</ul>
+		</li>	</ul>	</div>
+
+	<div id="page_body" class="open_menu clearfix">
+		<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&wizard_session=dfae5afbe298ff5052cec8f07d795a9c&continuing=1&step=3#" id="toggle_sidebar" title="Close the sidebar">←</a>
+		<div id="section_navigation">			
+			
+			<ul>
+
+										<!-- UHM MENU FOR Page Manager-->
+								<li class="">
+									<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=pages&section=list">Pages</a>
+								</li>						<!-- MENU FOR Articles-->
+						<li class=" has_sub">
+							Articles
+							<ul>
+													<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=configure&do=home">Articles Configuration</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=settings">Promote Article Settings</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=frontpage&do=frontpage">Frontpage Manager</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=articles&do=articles">Manage Articles</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=articles&do=add">Create New Article</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=categories&do=list">Manage Categories</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=fields&do=fields">Manage Fields</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=articles&section=editors&do=editors">Manage Editors</a>
+					</li>
+
+							</ul>
+						</li>								<!-- UHM MENU FOR Databases-->
+								<li class="">
+									<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=databases&section=databases">Databases</a>
+								</li>								<!-- UHM MENU FOR Blocks-->
+								<li class="active">
+									<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=blocks">Blocks</a>
+								</li>						<!-- MENU FOR Templates-->
+						<li class=" has_sub">
+							Templates
+							<ul>
+													<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=blocks">Block Templates</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=page">Page Templates</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=database">Database Templates</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=templates&section=pages&type=article">Article Templates</a>
+					</li>
+
+							</ul>
+						</li>								<!-- UHM MENU FOR Media Manager-->
+								<li class="">
+									<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=media&section=list">Media</a>
+								</li>						<!-- MENU FOR Settings-->
+						<li class=" has_sub">
+							Settings
+							<ul>
+													<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=settings">Basic</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=settings&do=advanced">Advanced</a>
+					</li>
+					<li>
+						<a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=settings&section=menu">Navigation Menu</a>
+					</li>
+
+							</ul>
+						</li>
+		</ul>
+		</div>
+		<div id="main_content" class="clearfix">
+			<ol id="breadcrumb">
+	<li><a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks">Blocks</a>&nbsp; &gt; &nbsp;</li><li>Editing: GX OpenX</li>
+</ol>				
+			
+
+
+<script type="text/javascript">
+	ipb.lang['insert_tag']	= 'Insert Tag';
+</script>
+<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.ccs.js"></script>
+<script type="text/javascript" src="./IP.Board  Content   Blocks_files/acp.tagsidebar.js"></script>
+
+<div class="section_title">
+	<h2>Configure Block</h2>
+</div>
+
+<form action="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&do=continue&wizard_session=dfae5afbe298ff5052cec8f07d795a9c" method="post">
+	<input type="hidden" name="step" value="4">
+	<div class="ipsSteps_wrap">
+		
+	<div class="ipsSteps clearfix">
+		<ul>			<li class=" clickable" onclick="window.location = &quot;http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&amp;app=ccs&amp;module=blocks&amp;section=wizard&amp;do=continue&amp;wizard_session=dfae5afbe298ff5052cec8f07d795a9c&amp;_jump=1&amp;step=2&quot;;">
+				<strong class="steps_title">Step 1</strong>
+				<span class="steps_desc">Custom Type</span>
+				<span class="steps_arrow">&nbsp;</span>
+			</li>			<li class=" clickable" onclick="window.location = &quot;http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&amp;app=ccs&amp;module=blocks&amp;section=wizard&amp;do=continue&amp;wizard_session=dfae5afbe298ff5052cec8f07d795a9c&amp;_jump=1&amp;step=3&quot;;">
+				<strong class="steps_title">Step 2</strong>
+				<span class="steps_desc">Block Details</span>
+				<span class="steps_arrow">&nbsp;</span>
+			</li>			<li class="steps_active">
+				<strong class="steps_title">Step 3</strong>
+				<span class="steps_desc">Template</span>
+				<span class="steps_arrow">&nbsp;</span>
+			</li>			<li class=" clickable" onclick="window.location = &quot;http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&amp;app=ccs&amp;module=blocks&amp;section=wizard&amp;do=continue&amp;wizard_session=dfae5afbe298ff5052cec8f07d795a9c&amp;_jump=1&amp;step=5&quot;;">
+				<strong class="steps_title">Step 4</strong>
+				<span class="steps_desc">Done</span>
+				<span class="steps_arrow">&nbsp;</span>
+			</li>		</ul>
+	</div>
+
+		<div class="ipsSteps_wrapper">
+			<div class="steps_content">
+				<div class="acp-box">
+					<h3>Edit template</h3>
+					<table class="ipsTable double_pad">
+						<tbody><tr>
+							<td class="sidebarContainer">	<div id="template-tags" class="templateTags-container"><div class="templateTags">
+	<h4>
+		<div class="right">
+			<span id="close-tags-link" title="Close">×</span>
+		</div>
+		Block Tags
+	</h4>
+	<div class="ipsTabBar" id="tag_tabbar">
+		<ul id="tags_tabs">
+			<li id="tab_templates" class="active">Block Tags</li>
+			<li id="tab_media">Media</li>
+		</ul>
+	</div>
+	<div id="templateTags_inner">
+		<div id="tab_media_pane" class="tag_pane" style="display: none">
+				
+		</div>
+		<div id="tab_templates_pane" class="tag_pane">			<ul>			<li class="template-tag-cat">
+				Generic Variables
+			</li>						<li class="tag_row ipsControlRow" data-tag="{$title}">
+							<ul class="ipsControlStrip">
+								<li class="i_add"><a href="http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&app=ccs&module=blocks&section=wizard&wizard_session=dfae5afbe298ff5052cec8f07d795a9c&continuing=1&step=3#" title="Insert Tag" class="insert_tag">Insert Tag</a></li>
+							</ul>
+							<h5>$title</h5>
+							<div class="tag_help">The title of the block, as configured under 'Block Details'</div>
+						</li>			</ul>		</div>
+	</div>
+</div></div>								
+								<div id="content-label" class="withSidebar"><textarea name="custom_content" cols="100" rows="30" wrap="soft" id="custom_content" style="width:100%;" class="multitext">&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="{$this-&gt;settings['board_url']}/public/js/3rd_party/bxslider/jquery.bxslider.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="{$this-&gt;settings['board_url']}/public/js/3rd_party/bxslider/jquery.bxslider.css"&gt;
+
+&lt;script&gt;
+$.noConflict();
+jQuery(document).ready(function(){
+  jQuery('.bxslider').bxSlider({
+    auto: true,
+    mode: 'fade'
+  });
+});
+&lt;/script&gt;
+
+&lt;ul class="bxslider"&gt;
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=ad01070f&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' id="carousel1" target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=20&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=ad01070f' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=a451ef4f&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' id="carousel2" target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=21&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a451ef4f' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=a1033b33&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=22&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a1033b33' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=a93ee63b&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=23&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a93ee63b' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=a219a08c&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' id="carousel3" target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=24&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a219a08c' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/ck.php?n=a3ffa3ae&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' id="carousel4" target='_blank'&gt;
+&lt;img src='http://GX-OpenX-1120464043.ap-southeast-1.elb.amazonaws.com/adserver/www/delivery/avw.php?zoneid=31&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a3ffa3ae' border='0' alt='' /&gt;&lt;/a&gt;
+&lt;a href="{$this-&gt;settings['board_url']}/store/featured-grid/#credits" id="banner_topup"&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</textarea></div>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</div>
+			<div id="steps_navigation" class="clearfix" style="margin-top: 10px;">
+				<input type="submit" value="Save " class="button primary" name="save_button"> <input type="submit" name="save_and_reload" value=" Save and Reload" class="button primary">
+				<input type="button" value="Cancel" class="button redbutton" onclick="window.location=&#39;http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&amp;app=ccs&amp;&amp;module=blocks&amp;section=blocks&amp;do=delete&amp;type=wizard&amp;block=dfae5afbe298ff5052cec8f07d795a9c&#39;;">
+				<input type="submit" value="Next »" class="button right">
+			</div>
+		</div>
+	</div>
+</form><script type="text/javascript">
+	if( !Object.isUndefined(ipb.textEditor) )
+	{
+		function insertTag( tag )
+		{
+			ipb.textEditor.getEditor().insert( tag );
+		}
+	}
+</script><script type="text/javascript" src="./IP.Board  Content   Blocks_files/rangyinputs.js"></script>
+<script type="text/javascript">
+	function insertTag( tag )
+	{
+		$('custom_content').focus();
+		rangyInputs.replaceSelectedText( $('custom_content'), tag );
+	}
+</script>
+
+
+<div id="acpQueries" style="display:none">
+	
+</div>
+		</div>
+	</div>
+	<div id="footer" class="clear">
+		<a href="http://www.invisionpower.com/">IP.Board 3</a> © 2014 IPS, Inc. &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://www.invisionpower.com/clients/" target="_blank" title="Get support by submitting a ticket to our technicians">Get Support</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://community.invisionpower.com/index.php?app=ccs" target="_blank" title="Our resource site provides free and premium skins, modifications, articles and languages for your IP.Board">Visit IPS Marketplace</a>	</div>
+	<script type="text/javascript">
+		jQuery.extend(true, ips,
+		{
+			member:  		{ member_id: parseInt( Array['member_id'] ) },
+			acpUrl:  		'http://localhost:10088/gx.1/forums/pagnadmin/index.php?adsess=8912559c275370c121b640b9311969db&',
+			rootUrl:        'http://localhost:10088/gx.1/forums',
+			publicUrl:      'http://localhost:10088/gx.1/forums/index.php?}',
+			publicImageUrl: "http://localhost:10088/gx.1/forums/pagnadmin/applications_addon/ips/ccs/skin_cp/images/",
+			acpImageUrl:    "http://localhost:10088/gx.1/forums/pagnadmin/skin_cp/images/",
+			formToken:      'cc173a7b15101e5de07187a26535802b',
+			bookmarksJSON:  []
+		} );		
+	</script>
+
+</body></html>
