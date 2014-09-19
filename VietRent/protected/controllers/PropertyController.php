@@ -27,6 +27,7 @@ class PropertyController extends Controller
 	}
 	
 	public function actionSaveInfo(){
+		//Save the shit into DB
 		$file = "/Users/Frank/a.txt";
 		$content = "file: ". json_encode($_FILES). "post: ". json_encode($_POST);
 		file_put_contents($file, $content, FILE_APPEND);

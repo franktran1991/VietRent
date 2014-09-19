@@ -68,9 +68,11 @@
                       		<p>
                       		<?php $this->renderPartial('/components/_photoForm'); ?>
 							</p>
-							 <input type="submit" class="btn btn-primary" id="submitInfo" value="Save and Continue"/>
-							 <p><button type="button" id="back_button_tab3" class="btn btn-primary">Back</button></p>
+							 <input type="submit" class="btn btn-primary" id="submitInfo" value="Upload Photos"/>
+							 
 						</form>
+						<p><button type="button" id="continue_button_tab3" class="btn btn-primary">Save and Continue</button></p>
+						<p><button type="button" id="back_button_tab3" class="btn btn-primary">Back</button></p>
                 </div>
     
                 <div class="bhoechie-tab-content">
@@ -163,6 +165,13 @@ $('#continue_button_tab2').click(function() {
     $("div.bhoechie-tab>div.bhoechie-tab-content").eq("2").addClass("active");
 });
 
+$('#continue_button_tab3').click(function() {
+	$("div.bhoechie-tab-menu>div.list-group>a").siblings('a.active').removeClass("active");
+	$("div.bhoechie-tab-menu>div.list-group>a").eq("3").addClass("active");
+	$("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+    $("div.bhoechie-tab>div.bhoechie-tab-content").eq("3").addClass("active");
+});
+
 $('#back_button_tab2').click(function() {
 	$("div.bhoechie-tab-menu>div.list-group>a").siblings('a.active').removeClass("active");
 	$("div.bhoechie-tab-menu>div.list-group>a").eq("0").addClass("active");
@@ -213,7 +222,7 @@ $( document ).ready(function() {
                myDropzone.on("completemultiple", function(files, response) {
                       // Gets triggered when the files have successfully been sent.
                       // Redirect user or notify of success.
-                    
+                    	alert("You have successfully upload the image");
                      
                       });
                      // this will submit your form to the specified action path
