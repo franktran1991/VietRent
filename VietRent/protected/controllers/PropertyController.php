@@ -25,4 +25,12 @@ class PropertyController extends Controller
 		$address = $_POST['address'];
 		$this->renderPartial('//components/_googleMap',array( 'height' => '500px', 'address' => $address,'new_property' => true),false, true);
 	}
+	
+	public function actionSaveInfo(){
+		$file = "/Users/Frank/a.txt";
+		$content = "file: ". json_encode($_FILES). "post: ". json_encode($_POST);
+		file_put_contents($file, $content, FILE_APPEND);
+		var_dump($_FILES);
+		var_dump($_POST);
+	}
 }

@@ -45,14 +45,13 @@ $label_options = array(
 <?php
 if(isset($new_property)){
 ?>
-	<h5 style = "color:#2D2D2D">Property Address</h5>
 	<input class="form-control input-lg" type="text" value="<?php echo $current_address ?>" disabled >
 	<div class="form-inline form-group" style = "color:#2D2D2D;">
-		<input type = "text" style = "width:100px;" class = "form-control" name = "Block" placeholder = "Block">
+		<input type = "text" style = "width:100px;" class = "form-control" id = "house_block" placeholder = "Block">
 		&nbsp;
-		<input type = "text" style = "width:100px;" class = "form-control" name = "Level" placeholder = "Level">
+		<input type = "text" style = "width:100px;" class = "form-control" id = "house_level" placeholder = "Level">
 		&nbsp;
-		<input type = "text" style = "width:100px;" class = "form-control" name = "Room" placeholder = "Room No.">
+		<input type = "text" style = "width:100px;" class = "form-control" id = "house_room" placeholder = "Room No.">
 	</div>
 <?php 
 }

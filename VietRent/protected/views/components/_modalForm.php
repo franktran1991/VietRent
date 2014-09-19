@@ -13,6 +13,7 @@
 						'clientOptions' => array(
 						'validateOnSubmit'=>true,
 						'validationUrl' => array('form/register'),
+						'htmlOptions' => array('class' => 'form-control'),
 		    			),
 					));
 					?>
@@ -38,6 +39,8 @@
 					echo $form->passwordFieldControlGroup($signup_model, 'password');
 					?>
 					</fieldset>
+					<center>
+					<div class = "form-inline">
 					<?php
 					echo BsHtml::formActions(array(
 					    BsHtml::submitButton('Submit', array(
@@ -45,11 +48,14 @@
 					    ))
 					));
 					?>
+					&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
 					echo BsHtml::button('Cancel', array(
 			            'data-dismiss' => 'modal'
 			        ));
 					?>
+					</div>
+					</center>
 					<?php
 					$this->endWidget();
 					?>
@@ -117,6 +123,8 @@
 		<?php echo $form->error($login_model,'password'); ?>
 		<?php echo $form->error($login_model,'email'); ?>
 		</fieldset>
+		<center>
+			<div class = "form-inline">
 		<?php
 		echo BsHtml::formActions(array(
 		    BsHtml::submitButton('Submit', array(
@@ -124,11 +132,14 @@
 		    ))
 		));
 		?>
+		&nbsp;&nbsp;&nbsp;&nbsp;
 		<?php
 		echo BsHtml::button('Cancel', array(
             'data-dismiss' => 'modal'
         ));
 		?>
+			</div>
+		</center>
 		<?php
 		$this->endWidget();
 		?>
