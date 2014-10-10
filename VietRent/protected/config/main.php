@@ -22,7 +22,8 @@ return array(
 		'application.components.*',
 		'bootstrap.behaviors.*',
     	'bootstrap.helpers.*',
-    	'bootstrap.widgets.*'
+    	'bootstrap.widgets.*',
+    	'application.extensions.CAdvancedArBehavior',
 	),
 
 	'modules'=>array(

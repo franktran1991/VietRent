@@ -46,13 +46,7 @@ $label_options = array(
 if(isset($new_property)){
 ?>
 	<input class="form-control input-lg" type="text" value="<?php echo $current_address ?>" disabled >
-	<div class="form-inline form-group" style = "color:#2D2D2D;">
-		<input type = "text" style = "width:100px;" class = "form-control" id = "house_block" placeholder = "Block">
-		&nbsp;
-		<input type = "text" style = "width:100px;" class = "form-control" id = "house_level" placeholder = "Level">
-		&nbsp;
-		<input type = "text" style = "width:100px;" class = "form-control" id = "house_room" placeholder = "Room No.">
-	</div>
+	
 <?php 
 }
 ?>

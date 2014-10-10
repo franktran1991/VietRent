@@ -100,7 +100,7 @@
 						'enableAjaxValidation' => true,
 						'action' => array('form/proceedLogin'),
 						'enableClientValidation' => true,
-					    'id' => 'Login_Form',
+					    'id' => 'Login_Form1',
 						'clientOptions' => array(
 						'validateOnSubmit'=>true,
 						'validationUrl' => array('form/login'),

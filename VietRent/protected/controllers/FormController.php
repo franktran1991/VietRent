@@ -34,7 +34,7 @@ class FormController extends Controller
 	{
 		$model=new LoginForm;
 		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='Login_Form')
+		if(isset($_POST['ajax']) && ($_POST['ajax']==='Login_Form' || $_POST['ajax']==='Login_Form1'))
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -55,16 +55,4 @@ class FormController extends Controller
 			$this->redirect(Yii::app()->homeUrl);	
 		}
 	}
-	
-	public function actionUpload_Image(){
-		$temp_file = $_FILES['file']['tmp_name'];
-		$file_name = $_FILES['file']['name'];
-		$uploadfile = Yii::app()->basePath."/public/" . $file_name;
-		move_uploaded_file($temp_file,$uploadfile);
-			
-		//$tempdir = 
-	}
-	
-
-
 }

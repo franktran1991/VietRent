@@ -5,9 +5,7 @@
  *
  * The followings are the available columns in table '{{amentities}}':
  * @property integer $amentity_id
- * @property integer $amentity_property_id
- * @property integer $amentity_wifi
- * @property integer $amentity_kitchen
+ * @property string $amentity_name
  */
 class Amentities extends CActiveRecord
 {
@@ -27,11 +25,11 @@ class Amentities extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('amentity_property_id, amentity_wifi, amentity_kitchen', 'required'),
-			array('amentity_property_id, amentity_wifi, amentity_kitchen', 'numerical', 'integerOnly'=>true),
+			array('amentity_name', 'required'),
+			array('amentity_name', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('amentity_id, amentity_property_id, amentity_wifi, amentity_kitchen', 'safe', 'on'=>'search'),
+			array('amentity_id, amentity_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -43,6 +41,7 @@ class Amentities extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+		'Property' => array(self::BELONGS_TO, 'Properties', 'vr_has_amentity(p_id, a_id)'),
 		);
 	}
 
@@ -53,9 +52,7 @@ class Amentities extends CActiveRecord
 	{
 		return array(
 			'amentity_id' => 'Amentity',
-			'amentity_property_id' => 'Amentity Property',
-			'amentity_wifi' => 'Amentity Wifi',
-			'amentity_kitchen' => 'Amentity Kitchen',
+			'amentity_name' => 'Amentity Name',
 		);
 	}
 
@@ -78,9 +75,7 @@ class Amentities extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('amentity_id',$this->amentity_id);
-		$criteria->compare('amentity_property_id',$this->amentity_property_id);
-		$criteria->compare('amentity_wifi',$this->amentity_wifi);
-		$criteria->compare('amentity_kitchen',$this->amentity_kitchen);
+		$criteria->compare('amentity_name',$this->amentity_name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -97,4 +92,9 @@ class Amentities extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function behaviors(){
+          return array( 'CAdvancedArBehavior' => array(
+            'class' => 'application.extensions.CAdvancedArBehavior'));
+          }
 }

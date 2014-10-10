@@ -1,25 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "{{property_reviews}}".
+ * This is the model class for table "{{rent_length}}".
  *
- * The followings are the available columns in table '{{property_reviews}}':
- * @property integer $review_id
- * @property integer $review_owner_id
- * @property integer $review_property_id
- * @property integer $review_star
- * @property string $review_content
- * @property string $review_create_time
- * @property string $review_update_time
+ * The followings are the available columns in table '{{rent_length}}':
+ * @property integer $p_id
+ * @property string $rent_length
  */
-class PropertyReviews extends CActiveRecord
+class RentLength extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{property_reviews}}';
+		return '{{rent_length}}';
 	}
 
 	/**
@@ -30,11 +25,12 @@ class PropertyReviews extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('review_owner_id, review_property_id, review_star, review_content, review_create_time, review_update_time', 'required'),
-			array('review_owner_id, review_property_id, review_star', 'numerical', 'integerOnly'=>true),
+			array('p_id, rent_length', 'required'),
+			array('p_id', 'numerical', 'integerOnly'=>true),
+			array('rent_length', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('review_id, review_owner_id, review_property_id, review_star, review_content, review_create_time, review_update_time', 'safe', 'on'=>'search'),
+			array('p_id, rent_length', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,13 +51,8 @@ class PropertyReviews extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'review_id' => 'Review',
-			'review_owner_id' => 'Review Owner',
-			'review_property_id' => 'Review Property',
-			'review_star' => 'Review Star',
-			'review_content' => 'Review Content',
-			'review_create_time' => 'Review Create Time',
-			'review_update_time' => 'Review Update Time',
+			'p_id' => 'P',
+			'rent_length' => 'Rent Length',
 		);
 	}
 
@@ -83,13 +74,8 @@ class PropertyReviews extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('review_id',$this->review_id);
-		$criteria->compare('review_owner_id',$this->review_owner_id);
-		$criteria->compare('review_property_id',$this->review_property_id);
-		$criteria->compare('review_star',$this->review_star);
-		$criteria->compare('review_content',$this->review_content,true);
-		$criteria->compare('review_create_time',$this->review_create_time,true);
-		$criteria->compare('review_update_time',$this->review_update_time,true);
+		$criteria->compare('p_id',$this->p_id);
+		$criteria->compare('rent_length',$this->rent_length,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,7 +86,7 @@ class PropertyReviews extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return PropertyReviews the static model class
+	 * @return RentLength the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

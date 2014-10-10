@@ -33,14 +33,14 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'required'),
-			array('user_first_name, user_last_name, user_password', 'length', 'max'=>30),
-			array('user_mobile', 'length', 'max'=>15),
-			array('user_email', 'length', 'max'=>80),
-			array('user_profile_pic_url', 'length', 'max'=>255),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('user_id, user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'safe', 'on'=>'search'),
+		array('user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'required'),
+		array('user_first_name, user_last_name', 'length', 'max'=>30),
+		array('user_mobile', 'length', 'max'=>15),
+		array('user_email', 'length', 'max'=>80),
+		array('user_profile_pic_url', 'length', 'max'=>255),
+		// The following rule is used by search().
+		// @todo Please remove those attributes that should not be searched.
+		array('user_id, user_first_name, user_last_name, user_mobile, user_email, user_password, user_DOB, user_profile_pic_url, user_create_time, user_update_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,6 +52,8 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+		'Property' => array(self::MANY_MANY, 'Properties', 'vr_has_property(u_id, p_id)'),
+		'Review' => array(self::MANY_MANY, 'Reviews', 'vr_create_review(u_id, r_id)'),
 		);
 	}
 
@@ -61,14 +63,14 @@ class Users extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'user_id' => 'User',
-			'user_first_name' => 'User First Name',
-			'user_last_name' => 'User Last Name',
-			'user_mobile' => 'User Mobile',
-			'user_email' => 'User Email',
-			'user_password' => 'User Password',
-			'user_DOB' => 'User Dob',
-			'user_profile_pic_url' => 'User Profile Pic Url',
+			'user_id' => 'User Id',
+			'user_first_name' => 'First Name',
+			'user_last_name' => 'Last Name',
+			'user_mobile' => 'Mobile',
+			'user_email' => 'Email',
+			'user_password' => 'Password',
+			'user_DOB' => 'DOB',
+			'user_profile_pic_url' => 'Profile Pic Url',
 			'user_create_time' => 'User Create Time',
 			'user_update_time' => 'User Update Time',
 		);
@@ -118,4 +120,10 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function behaviors()
+	{
+          return array( 'CAdvancedArBehavior' => array(
+            'class' => 'application.extensions.CAdvancedArBehavior'));
+    }
 }

@@ -1,21 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "{{dictionary}}".
+ * This is the model class for table "{{has_resident}}".
  *
- * The followings are the available columns in table '{{dictionary}}':
- * @property integer $dictionary_id
- * @property integer $dictionary_key
- * @property integer $dictionary_value
+ * The followings are the available columns in table '{{has_resident}}':
+ * @property integer $p_id
+ * @property integer $u_id
  */
-class Dictionary extends CActiveRecord
+class HasResident extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{dictionary}}';
+		return '{{has_resident}}';
 	}
 
 	/**
@@ -26,11 +25,11 @@ class Dictionary extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('dictionary_key, dictionary_value', 'required'),
-			array('dictionary_key, dictionary_value', 'numerical', 'integerOnly'=>true),
+			array('p_id, u_id', 'required'),
+			array('p_id, u_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('dictionary_id, dictionary_key, dictionary_value', 'safe', 'on'=>'search'),
+			array('p_id, u_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,9 +50,8 @@ class Dictionary extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'dictionary_id' => 'Dictionary',
-			'dictionary_key' => 'Dictionary Key',
-			'dictionary_value' => 'Dictionary Value',
+			'p_id' => 'P',
+			'u_id' => 'U',
 		);
 	}
 
@@ -75,9 +73,8 @@ class Dictionary extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('dictionary_id',$this->dictionary_id);
-		$criteria->compare('dictionary_key',$this->dictionary_key);
-		$criteria->compare('dictionary_value',$this->dictionary_value);
+		$criteria->compare('p_id',$this->p_id);
+		$criteria->compare('u_id',$this->u_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -88,7 +85,7 @@ class Dictionary extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Dictionary the static model class
+	 * @return HasResident the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

@@ -20,6 +20,7 @@ $cs
     ->registerCssFile($themePath.'/assets/css/viet-rent.css')
     ->registerCssFile($themePath.'/assets/css/bootstrap-theme.css')
     ->registerCssFile($themePath.'/assets/css/dropzone/dropzone.css')
+    ->registerCssFile($themePath.'/assets/css/bootstrap-slider.css')
     ->registerCssFile($themePath.'/assets/css/dropzone/basic.css');
 
 /**
@@ -29,8 +30,12 @@ $cs
     ->registerCoreScript('jquery',CClientScript::POS_END)
     ->registerCoreScript('jquery.ui',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/assets/js/bootstrap.min.js',CClientScript::POS_END)
+    ->registerScriptFile($themePath.'/assets/js/moment.js',CClientScript::POS_END)
+    ->registerScriptFile($themePath.'/assets/js/bootstrap-datetimepicker.js',CClientScript::POS_END)
+    ->registerScriptFile($themePath.'/assets/js/bootstrap.min.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/assets/js/typeahead.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/assets/js/viet-rent.js',CClientScript::POS_END)
+    ->registerScriptFile($themePath.'/assets/js/bootstrap-slider.js',CClientScript::POS_END)
     //->registerScriptFile($themePath.'/assets/js/dropzone/dropzone-amd-module.js',CClientScript::POS_END)
     //->registerScriptFile($themePath.'/assets/js/dropzone-amd-module.min.js',CClientScript::POS_END)
     //->registerScriptFile($themePath.'/assets/js/dropzone/dropzone.min.js',CClientScript::POS_END)
